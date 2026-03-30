@@ -1,0 +1,1053 @@
+# Summer-Fitness-Tracker
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Summer Cut — Kellsea</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Summer Cut">
+  <meta name="theme-color" content="#C4956A">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNDNDk1NkEiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjQTY3QTUyIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8IS0tIGJhY2tncm91bmQgd2l0aCByb3VuZGVkIGNvcm5lcnMgLS0+CiAgPHJlY3Qgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiIHJ4PSIxMTAiIHJ5PSIxMTAiIGZpbGw9InVybCgjYmcpIi8+CiAgPCEtLSBzdWJ0bGUgaW5uZXIgc2hhZG93IHJpbSAtLT4KICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgcng9IjExMCIgcnk9IjExMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMTUpIiBzdHJva2Utd2lkdGg9IjYiLz4KCiAgPCEtLSBLIGxldHRlcmZvcm0gLS0+CiAgPCEtLSB2ZXJ0aWNhbCBzdGVtIC0tPgogIDxyZWN0IHg9IjExOCIgeT0iMTQwIiB3aWR0aD0iNDQiIGhlaWdodD0iMjMyIiByeD0iOCIgZmlsbD0iI0Y1RjBFOCIvPgogIDwhLS0gdXBwZXIgZGlhZ29uYWwgYXJtIC0tPgogIDxwb2x5Z29uIHBvaW50cz0iMTYyLDI1NiAyODAsMTQwIDMzNiwxNDAgMjEwLDI2NCIgZmlsbD0iI0Y1RjBFOCIvPgogIDwhLS0gbG93ZXIgZGlhZ29uYWwgbGVnIC0tPgogIDxwb2x5Z29uIHBvaW50cz0iMTYyLDI1NiAyMTAsMjQ4IDMzNiwzNzIgMjgwLDM3MiIgZmlsbD0iI0Y1RjBFOCIvPgoKICA8IS0tIFIgbGV0dGVyZm9ybSAtLT4KICA8IS0tIHZlcnRpY2FsIHN0ZW0gLS0+CiAgPHJlY3QgeD0iMzU0IiB5PSIxNDAiIHdpZHRoPSI0NCIgaGVpZ2h0PSIyMzIiIHJ4PSI4IiBmaWxsPSIjRjVGMEU4Ii8+CiAgPCEtLSBib3dsIHRvcCBiYXIgLS0+CiAgPHJlY3QgeD0iMzU0IiB5PSIxNDAiIHdpZHRoPSI4OCIgaGVpZ2h0PSI0MCIgcng9IjgiIGZpbGw9IiNGNUYwRTgiLz4KICA8IS0tIGJvd2wgYm90dG9tIGJhciAtLT4KICA8cmVjdCB4PSIzNTQiIHk9IjIzMiIgd2lkdGg9IjgwIiBoZWlnaHQ9IjM4IiByeD0iOCIgZmlsbD0iI0Y1RjBFOCIvPgogIDwhLS0gYm93bCByaWdodCBjdXJ2ZSAtLT4KICA8cGF0aCBkPSJNNDQyIDE0MCBRNTEwIDE0MCA1MTAgMjEwIFE1MTAgMjcyIDQ0MiAyNzIgTDQ0MiAyMzIgUTQ2OCAyMzIgNDY4IDIxMCBRNDY4IDE4OCA0NDIgMTgwIFoiIGZpbGw9IiNGNUYwRTgiLz4KICA8IS0tIFIgbGVnIGRpYWdvbmFsIC0tPgogIDxwb2x5Z29uIHBvaW50cz0iMzk4LDI2NCA0NDQsMjY0IDUxMCwzNzIgNDYyLDM3MiIgZmlsbD0iI0Y1RjBFOCIvPgo8L3N2Zz4=">
+  <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNDNDk1NkEiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjQTY3QTUyIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8IS0tIGJhY2tncm91bmQgd2l0aCByb3VuZGVkIGNvcm5lcnMgLS0+CiAgPHJlY3Qgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiIHJ4PSIxMTAiIHJ5PSIxMTAiIGZpbGw9InVybCgjYmcpIi8+CiAgPCEtLSBzdWJ0bGUgaW5uZXIgc2hhZG93IHJpbSAtLT4KICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgcng9IjExMCIgcnk9IjExMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMTUpIiBzdHJva2Utd2lkdGg9IjYiLz4KCiAgPCEtLSBLIGxldHRlcmZvcm0gLS0+CiAgPCEtLSB2ZXJ0aWNhbCBzdGVtIC0tPgogIDxyZWN0IHg9IjExOCIgeT0iMTQwIiB3aWR0aD0iNDQiIGhlaWdodD0iMjMyIiByeD0iOCIgZmlsbD0iI0Y1RjBFOCIvPgogIDwhLS0gdXBwZXIgZGlhZ29uYWwgYXJtIC0tPgogIDxwb2x5Z29uIHBvaW50cz0iMTYyLDI1NiAyODAsMTQwIDMzNiwxNDAgMjEwLDI2NCIgZmlsbD0iI0Y1RjBFOCIvPgogIDwhLS0gbG93ZXIgZGlhZ29uYWwgbGVnIC0tPgogIDxwb2x5Z29uIHBvaW50cz0iMTYyLDI1NiAyMTAsMjQ4IDMzNiwzNzIgMjgwLDM3MiIgZmlsbD0iI0Y1RjBFOCIvPgoKICA8IS0tIFIgbGV0dGVyZm9ybSAtLT4KICA8IS0tIHZlcnRpY2FsIHN0ZW0gLS0+CiAgPHJlY3QgeD0iMzU0IiB5PSIxNDAiIHdpZHRoPSI0NCIgaGVpZ2h0PSIyMzIiIHJ4PSI4IiBmaWxsPSIjRjVGMEU4Ii8+CiAgPCEtLSBib3dsIHRvcCBiYXIgLS0+CiAgPHJlY3QgeD0iMzU0IiB5PSIxNDAiIHdpZHRoPSI4OCIgaGVpZ2h0PSI0MCIgcng9IjgiIGZpbGw9IiNGNUYwRTgiLz4KICA8IS0tIGJvd2wgYm90dG9tIGJhciAtLT4KICA8cmVjdCB4PSIzNTQiIHk9IjIzMiIgd2lkdGg9IjgwIiBoZWlnaHQ9IjM4IiByeD0iOCIgZmlsbD0iI0Y1RjBFOCIvPgogIDwhLS0gYm93bCByaWdodCBjdXJ2ZSAtLT4KICA8cGF0aCBkPSJNNDQyIDE0MCBRNTEwIDE0MCA1MTAgMjEwIFE1MTAgMjcyIDQ0MiAyNzIgTDQ0MiAyMzIgUTQ2OCAyMzIgNDY4IDIxMCBRNDY4IDE4OCA0NDIgMTgwIFoiIGZpbGw9IiNGNUYwRTgiLz4KICA8IS0tIFIgbGVnIGRpYWdvbmFsIC0tPgogIDxwb2x5Z29uIHBvaW50cz0iMzk4LDI2NCA0NDQsMjY0IDUxMCwzNzIgNDYyLDM3MiIgZmlsbD0iI0Y1RjBFOCIvPgo8L3N2Zz4=">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --chalk: #F5F0E8; --clay: #C4956A; --clay-dark: #A67A52;
+  --ink: #232320; --sage: #7A9E7E; --soft: #EDE8DF;
+  --border: #DDD6C8; --muted: #9A9080; --red: #C4706A;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { background: var(--chalk); font-family: 'DM Sans', sans-serif; color: var(--ink); min-height: 100vh; font-size: 14px; overflow-x: hidden; }
+
+/* HEADER */
+header { background: var(--ink); padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; position: sticky; top: 0; z-index: 100; }
+.header-left { display: flex; align-items: baseline; gap: 12px; }
+header h1 { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 300; color: var(--chalk); letter-spacing: 0.04em; }
+header .sub { font-size: 11px; color: var(--clay); letter-spacing: 0.12em; text-transform: uppercase; }
+.nav-tabs { display: flex; gap: 4px; flex-wrap: wrap; }
+.nav-tab { padding: 6px 14px; border-radius: 20px; font-size: 12px; font-weight: 500; cursor: pointer; border: 1px solid transparent; color: var(--muted); background: none; letter-spacing: 0.04em; transition: all 0.15s; }
+.nav-tab:hover { color: var(--chalk); }
+.nav-tab.active { background: var(--clay); color: white; border-color: var(--clay); }
+
+/* MACRO BAR */
+.macro-bar { background: var(--soft); border-bottom: 1px solid var(--border); padding: 12px 24px; display: flex; gap: 0; flex-wrap: wrap; align-items: stretch; }
+.macro-item { padding: 4px 20px 4px 0; margin-right: 20px; border-right: 1px solid var(--border); }
+.macro-item:last-child { border-right: none; }
+.macro-label { font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-bottom: 2px; }
+.macro-value { font-family: 'Cormorant Garamond', serif; font-size: 18px; font-weight: 600; color: var(--ink); }
+.macro-value span { font-size: 11px; font-family: 'DM Sans', sans-serif; font-weight: 400; color: var(--muted); }
+
+/* LAYOUT */
+.page { display: none; }
+.page.active { display: block; }
+.container { max-width: 980px; margin: 0 auto; padding: 24px 16px; }
+
+/* WEEK NAV */
+.week-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: 18px; flex-wrap: wrap; gap: 10px; }
+.week-title { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 400; font-style: italic; }
+.week-nav { display: flex; gap: 6px; align-items: center; }
+.week-nav button { background: white; border: 1px solid var(--border); color: var(--ink); width: 30px; height: 30px; border-radius: 5px; cursor: pointer; font-size: 15px; transition: all 0.15s; display: flex; align-items: center; justify-content: center; }
+.week-nav button:hover { border-color: var(--clay); color: var(--clay); }
+.week-num { font-size: 12px; color: var(--muted); min-width: 56px; text-align: center; letter-spacing: 0.06em; }
+
+/* DAY TABS */
+.day-tabs { display: flex; gap: 4px; margin-bottom: 18px; flex-wrap: wrap; }
+.day-tab { padding: 6px 12px; border: 1px solid var(--border); background: white; border-radius: 6px; font-size: 11px; font-weight: 500; cursor: pointer; transition: all 0.15s; color: var(--muted); letter-spacing: 0.03em; white-space: nowrap; }
+.day-tab:hover { border-color: var(--clay); color: var(--clay); }
+.day-tab.active { background: var(--ink); border-color: var(--ink); color: var(--chalk); }
+.day-tab.rest-tab { font-style: italic; }
+
+/* DAY PANEL */
+.day-panel { background: white; border: 1px solid var(--border); border-radius: 10px; overflow: hidden; margin-bottom: 16px; }
+.day-panel-header { background: var(--ink); padding: 14px 20px; display: flex; justify-content: space-between; align-items: center; }
+.day-panel-title { font-family: 'Cormorant Garamond', serif; font-size: 18px; font-weight: 300; color: var(--chalk); }
+.day-panel-badge { font-size: 10px; color: var(--clay); letter-spacing: 0.1em; text-transform: uppercase; }
+.cardio-banner { background: #EEF4EE; border-bottom: 1px solid #D4E4D4; padding: 9px 20px; display: flex; align-items: center; gap: 8px; font-size: 12px; color: #4A7A4E; }
+.cardio-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--sage); flex-shrink: 0; }
+.section-header { padding: 9px 20px; background: var(--soft); border-bottom: 1px solid var(--border); font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--clay); font-weight: 500; }
+
+/* WORKOUT TABLE — desktop */
+.table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+table { width: 100%; border-collapse: collapse; }
+thead tr { background: #FAFAF7; border-bottom: 1px solid var(--border); }
+thead th { padding: 8px 8px; font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); font-weight: 500; text-align: left; white-space: nowrap; }
+thead th:not(:first-child):not(:nth-child(2)) { text-align: center; }
+tbody tr { border-bottom: 1px solid var(--border); }
+tbody tr:last-child { border-bottom: none; }
+tbody tr:hover { background: #FDFAF6; }
+tbody tr.ss-b td.exercise-name { padding-left: 28px; color: var(--muted); font-size: 12px; }
+tbody tr.ss-b td.exercise-name::before { content: '\21B3'; margin-right: 6px; color: var(--clay); }
+tbody tr.ss-spacer td { padding: 4px; background: var(--soft); border-bottom: 1px solid var(--border); }
+td { padding: 9px 8px; font-size: 12px; }
+td.exercise-name { font-weight: 500; color: var(--ink); min-width: 160px; max-width: 200px; }
+td.target { text-align: center; color: var(--muted); font-size: 11px; white-space: nowrap; }
+td.set-cell { text-align: center; }
+td.set-cell input { width: 54px; padding: 5px 3px; border: 1px solid var(--border); border-radius: 4px; font-size: 11px; font-family: 'DM Sans', sans-serif; color: var(--ink); background: var(--chalk); text-align: center; transition: border-color 0.15s, background 0.15s; display: block; margin: 0 auto; }
+td.set-cell input:focus { outline: none; border-color: var(--clay); background: white; }
+td.set-cell input.has-val { border-color: var(--sage); background: #F0F5EF; }
+
+/* MOBILE table cards */
+@media (max-width: 640px) {
+  .table-wrap table, .table-wrap thead, .table-wrap tbody, .table-wrap th, .table-wrap td, .table-wrap tr { display: block; }
+  .table-wrap thead { display: none; }
+  .table-wrap tbody tr.ss-spacer { height: 8px; background: var(--soft); border: none; }
+  .table-wrap tbody tr { margin: 0; padding: 10px 14px; border-bottom: 1px solid var(--border); }
+  .table-wrap tbody tr.ss-b { background: #FDFAF6; padding-top: 4px; }
+  .table-wrap tbody tr.ss-b td.exercise-name { padding-left: 16px; }
+  td.exercise-name { font-size: 13px; padding: 0 0 6px 0; border: none; min-width: 0; max-width: none; }
+  td.target { text-align: left; padding: 0 0 6px 0; border: none; font-size: 11px; }
+  td.set-cell { display: inline-block; width: auto; padding: 0 5px 0 0; border: none; vertical-align: top; }
+  td.set-cell::before { display: block; font-size: 9px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); margin-bottom: 3px; content: attr(data-label); }
+  td.set-cell input { width: 60px; font-size: 12px; padding: 6px 4px; }
+  td:empty { display: none; }
+}
+
+/* NOTES */
+.notes-row { padding: 12px 20px; border-top: 1px solid var(--border); background: var(--soft); display: flex; align-items: flex-start; gap: 10px; }
+.notes-label { font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); padding-top: 7px; flex-shrink: 0; min-width: 40px; }
+.notes-row textarea { flex: 1; padding: 7px 10px; border: 1px solid var(--border); border-radius: 4px; font-size: 12px; font-family: 'DM Sans', sans-serif; color: var(--ink); background: white; resize: vertical; min-height: 44px; }
+.notes-row textarea:focus { outline: none; border-color: var(--clay); }
+
+/* REST DAY */
+.rest-panel { background: white; border: 1px solid var(--border); border-radius: 10px; padding: 48px 24px; text-align: center; }
+.rest-panel h3 { font-family: 'Cormorant Garamond', serif; font-size: 24px; font-weight: 300; font-style: italic; color: var(--muted); margin-bottom: 8px; }
+.rest-panel p { font-size: 13px; color: var(--muted); }
+/* CHECK-IN */
+.checkin-card { background: white; border: 1px solid var(--border); border-radius: 10px; overflow: hidden; margin-top: 16px; }
+.checkin-header { background: var(--ink); padding: 14px 20px; }
+.checkin-header h3 { font-family: 'Cormorant Garamond', serif; font-size: 17px; font-weight: 300; color: var(--chalk); }
+.checkin-body { padding: 16px 20px; display: flex; gap: 18px; flex-wrap: wrap; align-items: flex-end; }
+.checkin-field label { font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); display: block; margin-bottom: 5px; }
+.checkin-field input, .checkin-field textarea { padding: 7px 10px; border: 1px solid var(--border); border-radius: 5px; font-size: 13px; font-family: 'DM Sans', sans-serif; color: var(--ink); background: var(--chalk); transition: border-color 0.15s; }
+.checkin-field input:focus, .checkin-field textarea:focus { outline: none; border-color: var(--clay); background: white; }
+.checkin-field input { width: 120px; }
+.checkin-field textarea { width: 240px; min-height: 38px; resize: vertical; }
+
+/* FOOD LOG */
+.food-page-grid { display: grid; grid-template-columns: 1fr 320px; gap: 18px; align-items: start; }
+@media(max-width: 720px) { .food-page-grid { grid-template-columns: 1fr; } }
+.macro-summary-card { background: white; border: 1px solid var(--border); border-radius: 10px; overflow: hidden; position: sticky; top: 72px; }
+.macro-summary-card .card-header { background: var(--ink); padding: 14px 20px; }
+.macro-summary-card .card-header h3 { font-family: 'Cormorant Garamond', serif; font-size: 17px; font-weight: 300; color: var(--chalk); }
+.macro-summary-card .card-body { padding: 16px 20px; }
+.macro-goal-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; }
+.macro-goal-row:last-child { margin-bottom: 0; }
+.macro-goal-name { font-size: 12px; font-weight: 500; color: var(--ink); }
+.macro-goal-nums { font-size: 11px; color: var(--muted); text-align: right; }
+.macro-goal-nums .eaten { font-size: 15px; font-family: 'Cormorant Garamond', serif; font-weight: 600; color: var(--ink); }
+.progress-bar-wrap { background: var(--soft); border-radius: 20px; height: 6px; margin-top: 4px; overflow: hidden; }
+.progress-bar-fill { height: 100%; border-radius: 20px; transition: width 0.3s; }
+.bar-cal { background: var(--clay); } .bar-protein { background: var(--sage); } .bar-carbs { background: #C4A86A; } .bar-fat { background: #A67AAA; } .bar-over { background: var(--red) !important; }
+.food-log-card { background: white; border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+.food-log-card .card-header { background: var(--ink); padding: 14px 20px; }
+.food-log-card .card-header h3 { font-family: 'Cormorant Garamond', serif; font-size: 17px; font-weight: 300; color: var(--chalk); }
+.meal-section { border-bottom: 1px solid var(--border); }
+.meal-section:last-child { border-bottom: none; }
+.meal-header { padding: 10px 20px; background: var(--soft); display: flex; justify-content: space-between; align-items: center; }
+.meal-header-name { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--clay); font-weight: 500; }
+.meal-header-totals { font-size: 11px; color: var(--muted); }
+.meal-items { padding: 0 20px 8px; }
+.food-entry { display: grid; grid-template-columns: 1fr 50px 50px 50px 50px 26px; gap: 5px; align-items: center; padding: 5px 0; border-bottom: 1px solid #F0EBE2; }
+.food-entry:last-child { border-bottom: none; }
+.food-entry input { padding: 5px 6px; border: 1px solid var(--border); border-radius: 4px; font-size: 11px; font-family: 'DM Sans', sans-serif; color: var(--ink); background: var(--chalk); width: 100%; }
+.food-entry input:focus { outline: none; border-color: var(--clay); background: white; }
+.food-entry input.macro-input { text-align: center; }
+.food-entry .del-btn { background: none; border: none; color: var(--border); cursor: pointer; font-size: 15px; padding: 0; transition: color 0.15s; }
+.food-entry .del-btn:hover { color: var(--red); }
+.add-food-btn { margin: 8px 20px; padding: 7px 14px; background: none; border: 1px dashed var(--border); border-radius: 5px; font-size: 11px; color: var(--muted); cursor: pointer; transition: all 0.15s; width: calc(100% - 40px); }
+.add-food-btn:hover { border-color: var(--clay); color: var(--clay); }
+.food-col-headers { display: grid; grid-template-columns: 1fr 50px 50px 50px 50px 26px; gap: 5px; padding: 5px 0 2px; }
+.food-col-headers span { font-size: 9px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); text-align: center; }
+.food-col-headers span:first-child { text-align: left; }
+.water-row { padding: 12px 20px; border-top: 1px solid var(--border); display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.water-label { font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+.water-cups { display: flex; gap: 4px; }
+.water-cup { width: 26px; height: 26px; border-radius: 4px; border: 1px solid var(--border); background: var(--chalk); cursor: pointer; font-size: 13px; display: flex; align-items: center; justify-content: center; transition: all 0.15s; }
+.water-cup.filled { background: #D4EAF7; border-color: #7AB4D4; }
+
+/* WEIGHT PAGE */
+.weight-grid { display: grid; grid-template-columns: 1fr 320px; gap: 18px; align-items: start; }
+@media(max-width: 700px) { .weight-grid { grid-template-columns: 1fr; } }
+.wt-card { background: white; border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+.wt-card .card-header { background: var(--ink); padding: 14px 20px; display: flex; justify-content: space-between; align-items: center; }
+.wt-card .card-header h3 { font-family: 'Cormorant Garamond', serif; font-size: 17px; font-weight: 300; color: var(--chalk); }
+.wt-card .card-header span { font-size: 10px; color: var(--clay); letter-spacing: 0.1em; text-transform: uppercase; }
+.wt-card .card-body { padding: 18px 20px; }
+.wt-stats { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 18px; }
+.wt-stat { background: white; border: 1px solid var(--border); border-radius: 8px; padding: 12px 16px; flex: 1; min-width: 80px; }
+.wt-stat-label { font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-bottom: 4px; }
+.wt-stat-val { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 600; color: var(--ink); }
+.wt-stat-val.good { color: var(--sage); }
+.wt-stat-val.warn { color: var(--clay); }
+.chart-wrap { background: white; border: 1px solid var(--border); border-radius: 10px; padding: 18px; margin-bottom: 18px; }
+.chart-title { font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-bottom: 12px; }
+canvas#wtChart { width: 100% !important; height: 200px !important; display: block; }
+/* log entry */
+.log-entry-row { display: flex; gap: 10px; align-items: flex-end; margin-bottom: 14px; flex-wrap: wrap; }
+.conv-field { display: flex; flex-direction: column; gap: 4px; }
+.conv-field label { font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+.conv-field input, .conv-field select { padding: 8px 10px; border: 1px solid var(--border); border-radius: 5px; font-size: 13px; font-family: 'DM Sans', sans-serif; color: var(--ink); background: var(--chalk); transition: border-color 0.15s; }
+.conv-field input:focus, .conv-field select:focus { outline: none; border-color: var(--clay); background: white; }
+.log-btn { padding: 8px 18px; background: var(--ink); color: white; border: none; border-radius: 5px; font-size: 12px; font-weight: 500; cursor: pointer; transition: background 0.15s; height: 38px; }
+.log-btn:hover { background: #444; }
+.wt-preview { display: flex; flex-direction: column; gap: 4px; opacity: 0; transition: opacity 0.2s; }
+.wt-preview label { font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+.wt-preview .preview-val { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 600; color: var(--clay); }
+/* entries list */
+.wt-entries { max-height: 320px; overflow-y: auto; }
+.wt-entry-row { display: flex; justify-content: space-between; align-items: center; padding: 9px 0; border-bottom: 1px solid var(--border); }
+.wt-entry-row:last-child { border-bottom: none; }
+.wt-entry-date { font-size: 12px; color: var(--muted); min-width: 90px; }
+.wt-entry-vals { display: flex; gap: 14px; align-items: baseline; }
+.wt-entry-lbs { font-family: 'Cormorant Garamond', serif; font-size: 19px; font-weight: 600; }
+.wt-entry-kg { font-size: 11px; color: var(--muted); }
+.wt-entry-del { background: none; border: none; color: var(--border); cursor: pointer; font-size: 15px; transition: color 0.15s; }
+.wt-entry-del:hover { color: var(--red); }
+.wt-empty { text-align: center; padding: 28px 0; font-size: 13px; color: var(--muted); font-style: italic; }
+/* converter */
+.conv-section { margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid var(--border); }
+.conv-section:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
+.conv-section-title { font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-bottom: 12px; }
+.conv-row { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.conv-arrow { font-size: 16px; color: var(--clay); margin-top: 18px; }
+.conv-result { display: flex; flex-direction: column; gap: 3px; }
+.conv-result label { font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+.conv-result .result-val { font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 600; color: var(--ink); line-height: 1; }
+.conv-result .result-sub { font-size: 11px; color: var(--muted); }
+.use-btn { margin-top: 14px; padding: 7px 16px; background: var(--clay); color: white; border: none; border-radius: 5px; font-size: 11px; font-weight: 500; letter-spacing: 0.06em; cursor: pointer; transition: background 0.15s; }
+.use-btn:hover { background: var(--clay-dark); }
+/* goal ref */
+.ref-row { display: flex; justify-content: space-between; padding: 9px 0; border-bottom: 1px solid var(--border); }
+.ref-row:last-child { border-bottom: none; }
+.ref-label { font-size: 12px; color: var(--muted); }
+.ref-val { font-weight: 500; font-size: 13px; }
+.ref-val small { color: var(--muted); font-size: 11px; font-weight: 400; }
+
+/* PROGRESS PHOTOS */
+.photos-week-row { display:flex; align-items:center; justify-content:space-between; margin-bottom:18px; flex-wrap:wrap; gap:10px; }
+.photo-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin-bottom:18px; }
+@media(max-width:500px){ .photo-grid { grid-template-columns:1fr; gap:12px; } }
+.photo-slot { background:white; border:1px solid var(--border); border-radius:10px; overflow:hidden; }
+.photo-slot-header { background:var(--ink); padding:10px 14px; display:flex; justify-content:space-between; align-items:center; }
+.photo-slot-header h4 { font-family:'Cormorant Garamond',serif; font-size:15px; font-weight:300; color:var(--chalk); }
+.photo-slot-header button { background:none; border:1px solid rgba(255,255,255,0.2); color:var(--muted); font-size:10px; padding:3px 8px; border-radius:4px; cursor:pointer; transition:all 0.15s; letter-spacing:0.06em; }
+.photo-slot-header button:hover { border-color:var(--clay); color:var(--clay); }
+.photo-upload-area { aspect-ratio:3/4; display:flex; flex-direction:column; align-items:center; justify-content:center; cursor:pointer; transition:background 0.15s; background:var(--soft); position:relative; overflow:hidden; }
+.photo-upload-area:hover { background:#E8E2D8; }
+.photo-upload-area img { width:100%; height:100%; object-fit:cover; position:absolute; top:0; left:0; }
+.photo-upload-area input[type=file] { position:absolute; inset:0; opacity:0; cursor:pointer; width:100%; height:100%; }
+.photo-placeholder { display:flex; flex-direction:column; align-items:center; gap:8px; pointer-events:none; z-index:1; }
+.photo-placeholder-icon { font-size:28px; opacity:0.4; }
+.photo-placeholder-text { font-size:11px; color:var(--muted); letter-spacing:0.06em; text-transform:uppercase; }
+.photo-slot-notes { padding:10px 14px; border-top:1px solid var(--border); }
+.photo-slot-notes textarea { width:100%; padding:6px 8px; border:1px solid var(--border); border-radius:4px; font-size:11px; font-family:'DM Sans',sans-serif; color:var(--ink); background:var(--chalk); resize:none; min-height:40px; }
+.photo-slot-notes textarea:focus { outline:none; border-color:var(--clay); background:white; }
+/* comparison */
+.compare-card { background:white; border:1px solid var(--border); border-radius:10px; overflow:hidden; margin-top:18px; }
+.compare-card .card-header { background:var(--ink); padding:14px 20px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; }
+.compare-card .card-header h3 { font-family:'Cormorant Garamond',serif; font-size:17px; font-weight:300; color:var(--chalk); }
+.compare-controls { display:flex; gap:8px; align-items:center; flex-wrap:wrap; padding:14px 20px; border-bottom:1px solid var(--border); background:var(--soft); }
+.compare-controls label { font-size:10px; letter-spacing:0.1em; text-transform:uppercase; color:var(--muted); }
+.compare-controls select { padding:6px 10px; border:1px solid var(--border); border-radius:5px; font-size:12px; font-family:'DM Sans',sans-serif; background:var(--chalk); color:var(--ink); }
+.compare-controls select:focus { outline:none; border-color:var(--clay); }
+.compare-grid { display:grid; grid-template-columns:1fr 1fr; gap:0; }
+.compare-side { padding:16px 20px; }
+.compare-side:first-child { border-right:1px solid var(--border); }
+.compare-side-label { font-size:10px; letter-spacing:0.1em; text-transform:uppercase; color:var(--clay); margin-bottom:12px; }
+.compare-photos { display:grid; grid-template-columns:repeat(3,1fr); gap:8px; }
+.compare-photo { aspect-ratio:3/4; background:var(--soft); border-radius:6px; overflow:hidden; border:1px solid var(--border); }
+.compare-photo img { width:100%; height:100%; object-fit:cover; }
+.compare-empty { display:flex; align-items:center; justify-content:center; height:100%; font-size:11px; color:var(--muted); font-style:italic; }
+@media(max-width:560px){ .compare-grid { grid-template-columns:1fr; } .compare-side:first-child { border-right:none; border-bottom:1px solid var(--border); } }
+/* thumbnails in checkin */
+.checkin-photos { display:flex; gap:8px; margin-top:4px; }
+.checkin-thumb { width:56px; height:72px; border-radius:5px; overflow:hidden; background:var(--soft); border:1px solid var(--border); display:flex; align-items:center; justify-content:center; font-size:18px; opacity:0.5; }
+.checkin-thumb img { width:100%; height:100%; object-fit:cover; }
+.checkin-thumb.has-photo { opacity:1; }
+
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-left">
+    <h1>Summer Cut</h1>
+    <span class="sub">&#x2192; June 1</span>
+  </div>
+  <div class="nav-tabs">
+    <button class="nav-tab active" onclick="showPage('workout',this)">Workouts</button>
+    <button class="nav-tab" onclick="showPage('food',this)">Food Log</button>
+    <button class="nav-tab" onclick="showPage('weight',this)">Weight</button>
+    <button class="nav-tab" onclick="showPage('photos',this)">Progress</button>
+  </div>
+</header>
+
+<div class="macro-bar">
+  <div class="macro-item"><div class="macro-label">Calories</div><div class="macro-value">1,400 <span>kcal</span></div></div>
+  <div class="macro-item"><div class="macro-label">Protein</div><div class="macro-value">126 <span>g</span></div></div>
+  <div class="macro-item"><div class="macro-label">Carbs</div><div class="macro-value">120 <span>g</span></div></div>
+  <div class="macro-item"><div class="macro-label">Fat</div><div class="macro-value">38 <span>g</span></div></div>
+  <div class="macro-item"><div class="macro-label">Start</div><div class="macro-value">126 <span>lbs</span></div></div>
+  <div class="macro-item"><div class="macro-label">Goal</div><div class="macro-value">117&#x2013;119 <span>lbs</span></div></div>
+</div>
+
+<!-- WORKOUT PAGE -->
+<div class="page active" id="page-workout">
+  <div class="container">
+    <div class="week-row">
+      <div class="week-title">Training Log</div>
+      <div class="week-nav">
+        <button onclick="changeWeek(-1)">&#8249;</button>
+        <div class="week-num" id="weekLabel">Week 1</div>
+        <button onclick="changeWeek(1)">&#8250;</button>
+      </div>
+    </div>
+    <div class="day-tabs" id="dayTabs"></div>
+    <div id="dayContent"></div>
+    <div class="checkin-card">
+      <div class="checkin-header"><h3>Weekly Check-In</h3></div>
+      <div class="checkin-body">
+        <div class="checkin-field"><label>Avg Weight (lbs)</label><input type="number" id="ciWeight" placeholder="125.4" step="0.1" oninput="saveCheckin()"></div>
+        <div class="checkin-field"><label>Energy (1&#x2013;10)</label><input type="number" id="ciEnergy" placeholder="7" min="1" max="10" oninput="saveCheckin()"></div>
+        <div class="checkin-field"><label>Sleep (hrs avg)</label><input type="number" id="ciSleep" placeholder="7.5" step="0.5" oninput="saveCheckin()"></div>
+        
+        <div class="checkin-field">
+          <label>This Week's Photos</label>
+          <div class="checkin-photos">
+            <div class="checkin-thumb" id="ci-thumb-front"><span>&#x1F4F8;</span></div>
+            <div class="checkin-thumb" id="ci-thumb-side"><span>&#x1F4F8;</span></div>
+            <div class="checkin-thumb" id="ci-thumb-back"><span>&#x1F4F8;</span></div>
+          </div>
+        </div>
+        <div class="checkin-field"><label>Notes</label><textarea id="ciNotes" placeholder="How did this week feel?" oninput="saveCheckin()"></textarea></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOD LOG PAGE -->
+<div class="page" id="page-food">
+  <div class="container">
+    <div class="week-row">
+      <div class="week-title">Food Log</div>
+      <div class="week-nav">
+        <button onclick="changeFoodDay(-1)">&#8249;</button>
+        <div class="week-num" id="foodDayLabel">Today</div>
+        <button onclick="changeFoodDay(1)">&#8250;</button>
+      </div>
+    </div>
+    <div class="food-page-grid">
+      <div>
+        <div class="food-log-card">
+          <div class="card-header"><h3>Meals</h3></div>
+          <div id="mealSections"></div>
+          <div class="water-row">
+            <span class="water-label">Water</span>
+            <div class="water-cups" id="waterCups"></div>
+            <span style="font-size:11px;color:var(--muted)" id="waterCount">0 / 8 cups</span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="macro-summary-card">
+          <div class="card-header"><h3>Today's Macros</h3></div>
+          <div class="card-body">
+            <div class="macro-goal-row"><div><div class="macro-goal-name">Calories</div><div class="progress-bar-wrap"><div class="progress-bar-fill bar-cal" id="bar-cal" style="width:0%"></div></div></div><div class="macro-goal-nums"><div class="eaten" id="sum-cal">0</div><div>/ 1400 kcal</div></div></div>
+            <div class="macro-goal-row"><div><div class="macro-goal-name">Protein</div><div class="progress-bar-wrap"><div class="progress-bar-fill bar-protein" id="bar-protein" style="width:0%"></div></div></div><div class="macro-goal-nums"><div class="eaten" id="sum-protein">0</div><div>/ 126g</div></div></div>
+            <div class="macro-goal-row"><div><div class="macro-goal-name">Carbs</div><div class="progress-bar-wrap"><div class="progress-bar-fill bar-carbs" id="bar-carbs" style="width:0%"></div></div></div><div class="macro-goal-nums"><div class="eaten" id="sum-carbs">0</div><div>/ 120g</div></div></div>
+            <div class="macro-goal-row"><div><div class="macro-goal-name">Fat</div><div class="progress-bar-wrap"><div class="progress-bar-fill bar-fat" id="bar-fat" style="width:0%"></div></div></div><div class="macro-goal-nums"><div class="eaten" id="sum-fat">0</div><div>/ 38g</div></div></div>
+            <div style="margin-top:16px;padding-top:12px;border-top:1px solid var(--border)">
+              <div style="font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:8px;">Remaining</div>
+              <div style="display:flex;gap:12px;flex-wrap:wrap;">
+                <div><div style="font-size:10px;color:var(--muted)">Cal</div><div style="font-family:'Cormorant Garamond',serif;font-size:17px;font-weight:600;" id="rem-cal">1400</div></div>
+                <div><div style="font-size:10px;color:var(--muted)">Protein</div><div style="font-family:'Cormorant Garamond',serif;font-size:17px;font-weight:600;" id="rem-protein">126g</div></div>
+                <div><div style="font-size:10px;color:var(--muted)">Carbs</div><div style="font-family:'Cormorant Garamond',serif;font-size:17px;font-weight:600;" id="rem-carbs">120g</div></div>
+                <div><div style="font-size:10px;color:var(--muted)">Fat</div><div style="font-family:'Cormorant Garamond',serif;font-size:17px;font-weight:600;" id="rem-fat">38g</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- WEIGHT PAGE -->
+<div class="page" id="page-weight">
+  <div class="container">
+    <div class="week-row"><div class="week-title">Weight Tracker</div></div>
+
+    <!-- stats strip -->
+    <div class="wt-stats">
+      <div class="wt-stat"><div class="wt-stat-label">Current</div><div class="wt-stat-val" id="wt-current">&#x2013;</div></div>
+      <div class="wt-stat"><div class="wt-stat-label">In kg</div><div class="wt-stat-val" id="wt-current-kg">&#x2013;</div></div>
+      <div class="wt-stat"><div class="wt-stat-label">Start</div><div class="wt-stat-val">126 lbs</div></div>
+      <div class="wt-stat"><div class="wt-stat-label">Lost</div><div class="wt-stat-val good" id="wt-lost">&#x2013;</div></div>
+      <div class="wt-stat"><div class="wt-stat-label">To Goal</div><div class="wt-stat-val warn" id="wt-togoal">&#x2013;</div></div>
+    </div>
+
+    <!-- chart -->
+    <div class="chart-wrap">
+      <div class="chart-title">Progress &#x2014; lbs over time</div>
+      <canvas id="wtChart"></canvas>
+    </div>
+
+    <div class="weight-grid">
+      <!-- left: log -->
+      <div>
+        <div class="wt-card">
+          <div class="card-header"><h3>Log Weight</h3><span>lbs &amp; kg shown</span></div>
+          <div class="card-body">
+            <div class="log-entry-row">
+              <div class="conv-field"><label>Date</label><input type="date" id="wtDate" style="width:140px"></div>
+              <div class="conv-field"><label>Weight</label><input type="number" id="wtVal" placeholder="e.g. 57.5" step="0.1" style="width:100px" oninput="previewConvert()"></div>
+              <div class="conv-field">
+                <label>Unit</label>
+                <select id="wtUnit" onchange="previewConvert()">
+                  <option value="lbs">lbs</option>
+                  <option value="kg">kg</option>
+                </select>
+              </div>
+              <div class="wt-preview" id="wtPreview">
+                <label id="wtPreviewLabel">converts to</label>
+                <div class="preview-val" id="wtPreviewVal">&#x2013;</div>
+              </div>
+              <button class="log-btn" onclick="logWeight()">Log</button>
+            </div>
+            <div id="wtEntries" class="wt-entries"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- right: converter + goal ref -->
+      <div>
+        <div class="wt-card">
+          <div class="card-header"><h3>kg / lbs Converter</h3></div>
+          <div class="card-body">
+            <div class="conv-section">
+              <div class="conv-section-title">kg &#x2192; lbs</div>
+              <div class="conv-row">
+                <div class="conv-field"><label>Kilograms</label><input type="number" id="convKg" placeholder="e.g. 57.2" step="0.1" style="width:110px" oninput="convertKgToLbs()"></div>
+                <div class="conv-arrow">&#x2192;</div>
+                <div class="conv-result"><label>Pounds</label><div class="result-val" id="convLbsResult">&#x2013;</div><div class="result-sub" id="convLbsSub"></div></div>
+              </div>
+              <button class="use-btn" onclick="useKgResult()">Use this weight &#x2191;</button>
+            </div>
+            <div class="conv-section">
+              <div class="conv-section-title">lbs &#x2192; kg</div>
+              <div class="conv-row">
+                <div class="conv-field"><label>Pounds</label><input type="number" id="convLbs" placeholder="e.g. 126" step="0.1" style="width:110px" oninput="convertLbsToKg()"></div>
+                <div class="conv-arrow">&#x2192;</div>
+                <div class="conv-result"><label>Kilograms</label><div class="result-val" id="convKgResult">&#x2013;</div><div class="result-sub" id="convKgSub"></div></div>
+              </div>
+              <button class="use-btn" onclick="useLbsResult()">Use this weight &#x2191;</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="wt-card" style="margin-top:16px">
+          <div class="card-header"><h3>Goal Reference</h3></div>
+          <div class="card-body">
+            <div class="ref-row"><span class="ref-label">Start weight</span><span class="ref-val">126 lbs <small>/ 57.2 kg</small></span></div>
+            <div class="ref-row"><span class="ref-label">Goal (low)</span><span class="ref-val">117 lbs <small>/ 53.1 kg</small></span></div>
+            <div class="ref-row"><span class="ref-label">Goal (high)</span><span class="ref-val">119 lbs <small>/ 54.0 kg</small></span></div>
+            <div class="ref-row"><span class="ref-label">To lose</span><span class="ref-val">7&#x2013;9 lbs <small>/ 3.2&#x2013;4.1 kg</small></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+// ── CONSTANTS ──
+const GOALS = { cal: 1400, protein: 126, carbs: 120, fat: 38 };
+const MEAL_NAMES = ['Breakfast', 'Lunch', 'Snack', 'Dinner', 'Post-Workout'];
+
+const DAYS = [
+  { name:'Day 1', label:'Chest & Tris', cardio:'After session: 15 min incline walk cooldown',
+    sections:[
+      { title:'Supersets — Chest & Triceps', groups:[
+        { tag:'SS1', a:{name:'Flat Barbell Bench Press',sets:4,reps:'6–8'}, b:{name:'Rope Tricep Pushdown',sets:4,reps:'12'} },
+        { tag:'SS2', a:{name:'Incline DB Press',sets:4,reps:'8'}, b:{name:'Overhead Cable Tricep Extension',sets:4,reps:'12'} },
+        { tag:'SS3', a:{name:'Cable Fly (low to high)',sets:3,reps:'12'}, b:{name:'Close Grip Bench Press',sets:3,reps:'8'} },
+        { tag:'SS4', a:{name:'Pec Deck',sets:3,reps:'15'}, b:{name:'DB Skull Crusher',sets:3,reps:'12'} },
+        { tag:'FIN', a:{name:'Cable Crossover (high to low)',sets:3,reps:'15'}, b:{name:'Tricep Dip (BW or assisted)',sets:3,reps:'failure'} },
+      ]},
+      { title:'Abs — 3 Rounds', groups:[
+        { tag:'A1', a:{name:'Cable Crunch',sets:3,reps:'15'}, b:{name:'Hanging Leg Raise',sets:3,reps:'12'} },
+        { tag:'A2', a:{name:'Ab Wheel Rollout',sets:3,reps:'10'}, b:{name:'Plank Hold',sets:3,reps:'45 sec'} },
+      ]}
+    ]
+  },
+  { name:'Day 2', label:'Legs', cardio:'No cardio today — legs are taxing enough. Prioritize recovery.',
+    sections:[
+      { title:'Supersets — Glutes & Hamstrings', groups:[
+        { tag:'SS1', a:{name:'Barbell Hip Thrust',sets:4,reps:'6–8'}, b:{name:'Lying Leg Curl',sets:4,reps:'12'} },
+        { tag:'SS2', a:{name:'Romanian Deadlift',sets:4,reps:'6–8'}, b:{name:'Abductor Machine',sets:4,reps:'15'} },
+        { tag:'SS3', a:{name:'Leg Press (feet high & wide)',sets:4,reps:'10'}, b:{name:'Walking Lunges',sets:4,reps:'12 each'} },
+        { tag:'SS4', a:{name:'Bulgarian Split Squat',sets:3,reps:'8 each'}, b:{name:'Cable Kickback',sets:3,reps:'15 each'} },
+        { tag:'SS5', a:{name:'Smith Machine Hip Thrust',sets:3,reps:'10'}, b:{name:'Seated Leg Curl',sets:3,reps:'15'} },
+        { tag:'FIN', a:{name:'Hyperextension (glute focused)',sets:3,reps:'15'}, b:{name:'Abductor Machine',sets:3,reps:'20'} },
+      ]},
+      { title:'Abs — 3 Rounds', groups:[
+        { tag:'A1', a:{name:'Decline Sit-Up',sets:3,reps:'15'}, b:{name:'Russian Twist',sets:3,reps:'20 total'} },
+        { tag:'A2', a:{name:'Hanging Knee Raise',sets:3,reps:'15'}, b:{name:'Dead Bug',sets:3,reps:'10 each'} },
+      ]}
+    ]
+  },
+  { name:'Day 3', label:'Back & Bis', cardio:'After session: 40 min LISS — stairmaster or incline walk',
+    sections:[
+      { title:'Supersets — Back & Biceps', groups:[
+        { tag:'SS1', a:{name:'Barbell Row',sets:4,reps:'6–8'}, b:{name:'DB Curl',sets:4,reps:'8'} },
+        { tag:'SS2', a:{name:'Lat Pulldown (wide grip)',sets:4,reps:'8'}, b:{name:'Hammer Curl',sets:4,reps:'10'} },
+        { tag:'SS3', a:{name:'Seated Cable Row (close grip)',sets:3,reps:'8'}, b:{name:'Incline DB Curl',sets:3,reps:'12'} },
+        { tag:'SS4', a:{name:'Single Arm DB Row',sets:3,reps:'10 each'}, b:{name:'Straight Arm Pulldown',sets:3,reps:'12'} },
+        { tag:'SS5', a:{name:'Assisted Pull-Up',sets:3,reps:'8–10'}, b:{name:'Cable Curl',sets:3,reps:'12'} },
+        { tag:'FIN', a:{name:'Face Pull',sets:3,reps:'15'}, b:{name:'Reverse Curl',sets:3,reps:'12'} },
+      ]},
+      { title:'Abs — 3 Rounds', groups:[
+        { tag:'A1', a:{name:'Cable Crunch',sets:3,reps:'15'}, b:{name:'Ab Wheel Rollout',sets:3,reps:'10'} },
+        { tag:'A2', a:{name:'Plank Hold',sets:3,reps:'60 sec'}, b:{name:'Hanging Leg Raise',sets:3,reps:'12'} },
+      ]}
+    ]
+  },
+  { name:'Day 4', label:'Shoulders', cardio:'After session: 25 min HIIT — bike or treadmill (30s on / 60s off)',
+    sections:[
+      { title:'Supersets — Shoulders & Rear Delts', groups:[
+        { tag:'SS1', a:{name:'Seated Barbell Press',sets:4,reps:'6–8'}, b:{name:'Lateral Raise',sets:4,reps:'12–15'} },
+        { tag:'SS2', a:{name:'DB Arnold Press',sets:4,reps:'8'}, b:{name:'Cable Lateral Raise',sets:4,reps:'12 each'} },
+        { tag:'SS3', a:{name:'Face Pull',sets:4,reps:'15'}, b:{name:'Rear Delt DB Fly',sets:4,reps:'15'} },
+        { tag:'SS4', a:{name:'Reverse Pec Deck',sets:3,reps:'15'}, b:{name:'Upright Row (cable)',sets:3,reps:'12'} },
+        { tag:'FIN', a:{name:'Cable Lateral Raise (both)',sets:3,reps:'15 each'}, b:{name:'DB Front Raise',sets:3,reps:'12'} },
+      ]},
+      { title:'Abs — 3 Rounds', groups:[
+        { tag:'A1', a:{name:'Decline Sit-Up',sets:3,reps:'15'}, b:{name:'Russian Twist (weighted)',sets:3,reps:'20 total'} },
+        { tag:'A2', a:{name:'Cable Crunch',sets:3,reps:'15'}, b:{name:'Plank to Pike',sets:3,reps:'10'} },
+      ]}
+    ]
+  },
+  { name:'Day 5', label:'Glutes & Hams', cardio:'After session: 40 min incline walk LISS',
+    sections:[
+      { title:'Supersets — Glutes & Hamstrings (2nd hit)', groups:[
+        { tag:'SS1', a:{name:'Smith Machine Hip Thrust',sets:4,reps:'8'}, b:{name:'Cable Kickback',sets:4,reps:'15 each'} },
+        { tag:'SS2', a:{name:'Bulgarian Split Squat',sets:4,reps:'8 each'}, b:{name:'Hyperextension (glute)',sets:4,reps:'12'} },
+        { tag:'SS3', a:{name:'Sumo Deadlift',sets:3,reps:'6–8'}, b:{name:'Seated Leg Curl',sets:3,reps:'12'} },
+        { tag:'SS4', a:{name:'Leg Press (feet high)',sets:4,reps:'12'}, b:{name:'Standing Calf Raise',sets:4,reps:'20'} },
+        { tag:'SS5', a:{name:'Cable Pull-Through',sets:3,reps:'15'}, b:{name:'Seated Calf Raise',sets:3,reps:'20'} },
+        { tag:'FIN', a:{name:'Abductor Machine',sets:3,reps:'20'}, b:{name:'Donkey Kick Machine',sets:3,reps:'15 each'} },
+      ]},
+      { title:'Abs — 3 Rounds', groups:[
+        { tag:'A1', a:{name:'Hanging Leg Raise',sets:3,reps:'12'}, b:{name:'Ab Wheel Rollout',sets:3,reps:'10'} },
+        { tag:'A2', a:{name:'Cable Crunch',sets:3,reps:'15'}, b:{name:'Side Plank Hold',sets:3,reps:'30 sec each'} },
+      ]}
+    ]
+  },
+  { name:'Rest', label:'Active Recovery', rest:true },
+  { name:'Rest', label:'Full Rest', rest:true },
+];
+
+// ── STATE ──
+let currentWeek = 1, currentDay = 0, foodDayOffset = 0;
+function wk() { return 'w' + currentWeek; }
+function fdKey() { var d = new Date(); d.setDate(d.getDate() + foodDayOffset); return 'food_' + d.toISOString().slice(0,10); }
+function ls(k, v) { if (v === undefined) return localStorage.getItem(k); localStorage.setItem(k, v); }
+function lsj(k, v) { if (v === undefined) { var r = localStorage.getItem(k); return r ? JSON.parse(r) : null; } localStorage.setItem(k, JSON.stringify(v)); }
+// ── NAVIGATION ──
+function showPage(p, btn) {
+  document.querySelectorAll('.page').forEach(function(el){ el.classList.remove('active'); });
+  document.querySelectorAll('.nav-tab').forEach(function(el){ el.classList.remove('active'); });
+  document.getElementById('page-' + p).classList.add('active');
+  if (btn) btn.classList.add('active');
+  if (p === 'food') renderFoodLog();
+  if (p === 'weight') { initWtDate(); renderWeightPage(); }
+}
+
+// ── WORKOUT ──
+function changeWeek(d) {
+  currentWeek = Math.max(1, Math.min(12, currentWeek + d));
+  document.getElementById('weekLabel').textContent = 'Week ' + currentWeek;
+  renderDay(); loadCheckin();
+}
+function renderTabs() {
+  var tabs = document.getElementById('dayTabs'); tabs.innerHTML = '';
+  DAYS.forEach(function(day, i) {
+    var btn = document.createElement('button');
+    btn.className = 'day-tab' + (day.rest ? ' rest-tab' : '') + (i === currentDay ? ' active' : '');
+    btn.textContent = day.rest ? (day.name + ' — ' + day.label) : (day.name + ': ' + day.label);
+    btn.onclick = function(){ currentDay = i; renderTabs(); renderDay(); };
+    tabs.appendChild(btn);
+  });
+}
+function exKey(dI,sI,gI,ab,sN,f){ return wk()+'_d'+dI+'_s'+sI+'_g'+gI+'_'+ab+'_set'+sN+'_'+f; }
+function notesKey(dI){ return wk()+'_d'+dI+'_notes'; }
+function makeSetInputs(dI,sI,gI,ab,numSets) {
+  var h = '';
+  for (var s=1; s<=4; s++) {
+    if (s<=numSets) {
+      var wk2=exKey(dI,sI,gI,ab,s,'w'), rk=exKey(dI,sI,gI,ab,s,'r');
+      var wv=ls(wk2)||'', rv=ls(rk)||'';
+      h += '<td class="set-cell" data-label="S'+s+' Wt"><input type="text" placeholder="lbs" value="'+wv+'" class="'+(wv?'has-val':'')+'" oninput="ls(\''+wk2+'\',this.value);this.classList.toggle(\'has-val\',!!this.value)"></td>';
+      h += '<td class="set-cell" data-label="S'+s+' Reps"><input type="text" placeholder="reps" value="'+rv+'" class="'+(rv?'has-val':'')+'" oninput="ls(\''+rk+'\',this.value);this.classList.toggle(\'has-val\',!!this.value)"></td>';
+    } else { h += '<td></td><td></td>'; }
+  }
+  return h;
+}
+function renderDay() {
+  var content = document.getElementById('dayContent'), day = DAYS[currentDay];
+  if (day.rest) { content.innerHTML = '<div class="rest-panel"><h3>'+day.label+'</h3><p>Optional easy walk. Prioritize protein, sleep, and hydration.</p></div>'; return; }
+  var html = '<div class="day-panel"><div class="day-panel-header"><div class="day-panel-title">'+day.name+' — '+day.label+'</div><div class="day-panel-badge">Week '+currentWeek+'</div></div><div class="cardio-banner"><div class="cardio-dot"></div>'+day.cardio+'</div>';
+  day.sections.forEach(function(sec,sI){
+    html += '<div class="section-header">'+sec.title+'</div><div class="table-wrap"><table><thead><tr><th style="min-width:160px">Exercise</th><th>Target</th><th>S1 Wt</th><th>S1 Reps</th><th>S2 Wt</th><th>S2 Reps</th><th>S3 Wt</th><th>S3 Reps</th><th>S4 Wt</th><th>S4 Reps</th></tr></thead><tbody>';
+    sec.groups.forEach(function(grp,gI){
+      var ts = grp.tag.startsWith('A') ? 'color:var(--sage)' : grp.tag==='FIN' ? 'color:var(--clay)' : '';
+      html += '<tr><td class="exercise-name"><span style="font-size:10px;font-weight:600;letter-spacing:0.06em;'+ts+';margin-right:6px">'+grp.tag+'</span>'+grp.a.name+'</td><td class="target">'+grp.a.sets+'x'+grp.a.reps+'</td>'+makeSetInputs(currentDay,sI,gI,'a',grp.a.sets)+'</tr>';
+      html += '<tr class="ss-b"><td class="exercise-name">'+grp.b.name+'</td><td class="target">'+grp.b.sets+'x'+grp.b.reps+'</td>'+makeSetInputs(currentDay,sI,gI,'b',grp.b.sets)+'</tr>';
+      html += '<tr class="ss-spacer"><td colspan="10"></td></tr>';
+    });
+    html += '</tbody></table></div>';
+  });
+  var nv = ls(notesKey(currentDay))||'';
+  html += '<div class="notes-row"><div class="notes-label">Notes</div><textarea placeholder="PRs, how it felt, adjustments..." oninput="ls(\''+notesKey(currentDay)+'\',this.value)">'+nv+'</textarea></div></div>';
+  content.innerHTML = html;
+}
+function saveCheckin() {
+  lsj('checkin_'+wk(), { weight:document.getElementById('ciWeight').value, energy:document.getElementById('ciEnergy').value, sleep:document.getElementById('ciSleep').value, notes:document.getElementById('ciNotes').value });
+}
+function loadCheckin() {
+  updateCheckinThumbs();
+  var d = lsj('checkin_'+wk()); if (!d) return;
+  document.getElementById('ciWeight').value = d.weight||'';
+  document.getElementById('ciEnergy').value = d.energy||'';
+  document.getElementById('ciSleep').value = d.sleep||'';
+  document.getElementById('ciNotes').value = d.notes||'';
+}
+
+// ── FOOD LOG ──
+function changeFoodDay(d) {
+  foodDayOffset += d;
+  var dt = new Date(); dt.setDate(dt.getDate()+foodDayOffset);
+  var label = foodDayOffset===0 ? 'Today' : foodDayOffset===-1 ? 'Yesterday' : dt.toLocaleDateString('en-US',{month:'short',day:'numeric'});
+  document.getElementById('foodDayLabel').textContent = label;
+  renderFoodLog();
+}
+function getFoodData() { return lsj(fdKey()) || { meals: MEAL_NAMES.map(function(n){ return {name:n,items:[]}; }), water:0 }; }
+function saveFoodData(data) { lsj(fdKey(), data); }
+function addFoodItem(mi) { var d=getFoodData(); d.meals[mi].items.push({name:'',cal:'',protein:'',carbs:'',fat:''}); saveFoodData(d); renderFoodLog(); }
+function deleteFoodItem(mi,ii) { var d=getFoodData(); d.meals[mi].items.splice(ii,1); saveFoodData(d); renderFoodLog(); }
+function updateFoodItem(mi,ii,field,val) { var d=getFoodData(); d.meals[mi].items[ii][field]=val; saveFoodData(d); updateMacroSummary(); updateMealTotals(mi); }
+function toggleWater(i) { var d=getFoodData(); d.water=d.water===i+1?i:i+1; saveFoodData(d); renderWater(d.water); }
+function renderWater(count) {
+  var cups=document.getElementById('waterCups'); if(!cups) return;
+  cups.innerHTML='';
+  for(var i=0;i<8;i++) cups.innerHTML+='<div class="water-cup '+(i<count?'filled':'')+'" onclick="toggleWater('+i+')">&#128167;</div>';
+  document.getElementById('waterCount').textContent=count+' / 8 cups';
+}
+function updateMealTotals(mi) {
+  var d=getFoodData(), meal=d.meals[mi];
+  var t=meal.items.reduce(function(a,it){ a.cal+=parseFloat(it.cal)||0; a.protein+=parseFloat(it.protein)||0; a.carbs+=parseFloat(it.carbs)||0; a.fat+=parseFloat(it.fat)||0; return a; },{cal:0,protein:0,carbs:0,fat:0});
+  var el=document.getElementById('meal-totals-'+mi); if(el) el.textContent=Math.round(t.cal)+' kcal · P'+Math.round(t.protein)+' · C'+Math.round(t.carbs)+' · F'+Math.round(t.fat);
+}
+function updateMacroSummary() {
+  var d=getFoodData(), t={cal:0,protein:0,carbs:0,fat:0};
+  d.meals.forEach(function(m){ m.items.forEach(function(it){ t.cal+=parseFloat(it.cal)||0; t.protein+=parseFloat(it.protein)||0; t.carbs+=parseFloat(it.carbs)||0; t.fat+=parseFloat(it.fat)||0; }); });
+  [{id:'cal',goal:GOALS.cal,bar:'bar-cal'},{id:'protein',goal:GOALS.protein,bar:'bar-protein'},{id:'carbs',goal:GOALS.carbs,bar:'bar-carbs'},{id:'fat',goal:GOALS.fat,bar:'bar-fat'}].forEach(function(s){
+    var val=Math.round(t[s.id]), pct=Math.min((val/s.goal)*100,100), over=val>s.goal;
+    var sEl=document.getElementById('sum-'+s.id), bEl=document.getElementById(s.bar), rEl=document.getElementById('rem-'+s.id);
+    if(sEl){sEl.textContent=s.id==='cal'?val:val+'g'; sEl.style.color=over?'var(--red)':'var(--ink)';}
+    if(bEl){bEl.style.width=pct+'%'; bEl.classList.toggle('bar-over',over);}
+    if(rEl){var rem=Math.max(0,s.goal-val); rEl.textContent=s.id==='cal'?rem:rem+'g'; rEl.style.color=over?'var(--red)':'var(--ink)';}
+  });
+}
+function renderFoodLog() {
+  var d=getFoodData(), sections=document.getElementById('mealSections'); sections.innerHTML='';
+  d.meals.forEach(function(meal,mi){
+    var t=meal.items.reduce(function(a,it){ a.cal+=parseFloat(it.cal)||0; a.protein+=parseFloat(it.protein)||0; a.carbs+=parseFloat(it.carbs)||0; a.fat+=parseFloat(it.fat)||0; return a; },{cal:0,protein:0,carbs:0,fat:0});
+    var rows='';
+    if(meal.items.length>0){
+      rows+='<div class="food-col-headers"><span>Food</span><span>Cal</span><span>Prot</span><span>Carbs</span><span>Fat</span><span></span></div>';
+      meal.items.forEach(function(item,ii){
+        rows+='<div class="food-entry"><input type="text" placeholder="Food name" value="'+(item.name||'')+'" oninput="updateFoodItem('+mi+','+ii+',\'name\',this.value)"><input type="number" class="macro-input" placeholder="kcal" value="'+(item.cal||'')+'" oninput="updateFoodItem('+mi+','+ii+',\'cal\',this.value)"><input type="number" class="macro-input" placeholder="g" value="'+(item.protein||'')+'" oninput="updateFoodItem('+mi+','+ii+',\'protein\',this.value)"><input type="number" class="macro-input" placeholder="g" value="'+(item.carbs||'')+'" oninput="updateFoodItem('+mi+','+ii+',\'carbs\',this.value)"><input type="number" class="macro-input" placeholder="g" value="'+(item.fat||'')+'" oninput="updateFoodItem('+mi+','+ii+',\'fat\',this.value)"><button class="del-btn" onclick="deleteFoodItem('+mi+','+ii+')">&#x00D7;</button></div>';
+      });
+    }
+    var ts=meal.items.length>0?Math.round(t.cal)+' kcal · P'+Math.round(t.protein)+' · C'+Math.round(t.carbs)+' · F'+Math.round(t.fat):'';
+    sections.innerHTML+='<div class="meal-section"><div class="meal-header"><div class="meal-header-name">'+meal.name+'</div><div class="meal-header-totals" id="meal-totals-'+mi+'">'+ts+'</div></div><div class="meal-items">'+rows+'</div><button class="add-food-btn" onclick="addFoodItem('+mi+')">+ Add food</button></div>';
+  });
+  renderWater(d.water);
+  updateMacroSummary();
+}
+
+// ── WEIGHT TRACKER ──
+function getWeightLog() { return lsj('weightLog') || []; }
+function saveWeightLog(log) { lsj('weightLog', log); }
+function todayStr() { return new Date().toISOString().slice(0,10); }
+function initWtDate() { var d=document.getElementById('wtDate'); if(d && !d.value) d.value=todayStr(); }
+
+function previewConvert() {
+  var val=parseFloat(document.getElementById('wtVal').value);
+  var unit=document.getElementById('wtUnit').value;
+  var preview=document.getElementById('wtPreview');
+  var pVal=document.getElementById('wtPreviewVal');
+  var pLabel=document.getElementById('wtPreviewLabel');
+  if(!val||isNaN(val)){preview.style.opacity='0';return;}
+  preview.style.opacity='1';
+  if(unit==='kg'){pLabel.textContent='in lbs'; pVal.textContent=(val*2.20462).toFixed(1)+' lbs';}
+  else{pLabel.textContent='in kg'; pVal.textContent=(val/2.20462).toFixed(2)+' kg';}
+}
+
+function logWeight() {
+  var val=parseFloat(document.getElementById('wtVal').value);
+  var unit=document.getElementById('wtUnit').value;
+  var date=document.getElementById('wtDate').value;
+  if(!val||isNaN(val)||!date) return;
+  var lbs=unit==='kg'?parseFloat((val*2.20462).toFixed(1)):val;
+  var kg=unit==='lbs'?parseFloat((val/2.20462).toFixed(2)):val;
+  var log=getWeightLog();
+  var idx=log.findIndex(function(e){return e.date===date;});
+  if(idx>-1) log.splice(idx,1);
+  log.push({date:date,lbs:lbs,kg:kg});
+  log.sort(function(a,b){return a.date.localeCompare(b.date);});
+  saveWeightLog(log);
+  document.getElementById('wtVal').value='';
+  document.getElementById('wtPreview').style.opacity='0';
+  renderWeightPage();
+}
+
+function deleteWeightEntry(date) {
+  saveWeightLog(getWeightLog().filter(function(e){return e.date!==date;}));
+  renderWeightPage();
+}
+
+function convertKgToLbs() {
+  var kg=parseFloat(document.getElementById('convKg').value);
+  var rEl=document.getElementById('convLbsResult'), sEl=document.getElementById('convLbsSub');
+  if(!kg||isNaN(kg)){rEl.textContent='–';sEl.textContent='';return;}
+  rEl.textContent=(kg*2.20462).toFixed(1)+' lbs';
+  sEl.textContent=kg+' kg exactly';
+}
+
+function convertLbsToKg() {
+  var lbs=parseFloat(document.getElementById('convLbs').value);
+  var rEl=document.getElementById('convKgResult'), sEl=document.getElementById('convKgSub');
+  if(!lbs||isNaN(lbs)){rEl.textContent='–';sEl.textContent='';return;}
+  rEl.textContent=(lbs/2.20462).toFixed(2)+' kg';
+  sEl.textContent=lbs+' lbs exactly';
+}
+
+function useKgResult() {
+  var kg=parseFloat(document.getElementById('convKg').value); if(!kg||isNaN(kg)) return;
+  document.getElementById('wtVal').value=kg;
+  document.getElementById('wtUnit').value='kg';
+  previewConvert();
+}
+
+function useLbsResult() {
+  var lbs=parseFloat(document.getElementById('convLbs').value); if(!lbs||isNaN(lbs)) return;
+  document.getElementById('wtVal').value=lbs;
+  document.getElementById('wtUnit').value='lbs';
+  previewConvert();
+}
+
+function renderWeightPage() {
+  var log=getWeightLog(), startLbs=126, goalLow=117, goalHigh=119;
+  var current=log.length?log[log.length-1]:null;
+  var el;
+  el=document.getElementById('wt-current'); if(el) el.textContent=current?current.lbs+' lbs':'–';
+  el=document.getElementById('wt-current-kg'); if(el) el.textContent=current?current.kg+' kg':'–';
+  el=document.getElementById('wt-lost'); if(el) el.textContent=current?(startLbs-current.lbs).toFixed(1)+' lbs':'–';
+  el=document.getElementById('wt-togoal');
+  if(el){ var rem=current?Math.max(0,current.lbs-goalHigh):null; el.textContent=rem===null?'–':rem===0?'In range!':rem.toFixed(1)+' lbs to go'; }
+  var entries=document.getElementById('wtEntries');
+  if(entries){
+    if(!log.length){ entries.innerHTML='<div class="wt-empty">No entries yet — log your first weight above</div>'; }
+    else {
+      entries.innerHTML=log.slice().reverse().map(function(e){
+        var d=new Date(e.date+'T00:00:00');
+        var label=d.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});
+        var inGoal=e.lbs>=goalLow&&e.lbs<=goalHigh;
+        var color=inGoal?'color:var(--sage)':'';
+        return '<div class="wt-entry-row"><div class="wt-entry-date">'+label+'</div><div class="wt-entry-vals"><div class="wt-entry-lbs" style="'+color+'">'+e.lbs+' lbs</div><div class="wt-entry-kg">'+e.kg+' kg</div></div><button class="wt-entry-del" onclick="deleteWeightEntry(\''+e.date+'\')">&#x00D7;</button></div>';
+      }).join('');
+    }
+  }
+  drawWeightChart(log);
+}
+
+function drawWeightChart(log) {
+  var canvas=document.getElementById('wtChart'); if(!canvas) return;
+  var ctx=canvas.getContext('2d');
+  var minY=113, maxY=129, dpr=window.devicePixelRatio||1;
+  var W=canvas.offsetWidth||560, H=200;
+  canvas.width=W*dpr; canvas.height=H*dpr; ctx.scale(dpr,dpr);
+  var pL=42,pR=62,pT=14,pB=34, cW=W-pL-pR, cH=H-pT-pB;
+  ctx.clearRect(0,0,W,H);
+  function toX(i){return pL+(log.length<2?cW/2:(i/(log.length-1))*cW);}
+  function toY(v){return pT+(1-(v-minY)/(maxY-minY))*cH;}
+  // grid lines
+  ctx.strokeStyle='#EDE8DF'; ctx.lineWidth=1;
+  for(var gi=0;gi<=4;gi++){var gv=minY+(maxY-minY)*(gi/4),gy=toY(gv); ctx.beginPath();ctx.moveTo(pL,gy);ctx.lineTo(W-pR,gy);ctx.stroke(); ctx.fillStyle='#9A9080';ctx.font='10px sans-serif';ctx.textAlign='right';ctx.fillText(Math.round(gv),pL-5,gy+3);}
+  // goal band
+  ctx.fillStyle='rgba(122,158,126,0.13)'; ctx.fillRect(pL,toY(119),cW,toY(117)-toY(119));
+  ctx.strokeStyle='rgba(122,158,126,0.55)';ctx.lineWidth=1;ctx.setLineDash([4,3]);
+  [117,119].forEach(function(v){ctx.beginPath();ctx.moveTo(pL,toY(v));ctx.lineTo(W-pR,toY(v));ctx.stroke();});
+  ctx.setLineDash([]);
+  ctx.fillStyle='rgba(122,158,126,0.9)';ctx.font='bold 9px sans-serif';ctx.textAlign='left';ctx.fillText('goal zone',W-pR+4,toY(118)+3);
+  // start line
+  ctx.strokeStyle='rgba(196,149,106,0.5)';ctx.lineWidth=1;ctx.setLineDash([3,3]);
+  ctx.beginPath();ctx.moveTo(pL,toY(126));ctx.lineTo(W-pR,toY(126));ctx.stroke();
+  ctx.setLineDash([]);ctx.fillStyle='rgba(196,149,106,0.9)';ctx.font='9px sans-serif';ctx.fillText('start',W-pR+4,toY(126)+3);
+  if(!log.length){ctx.fillStyle='#9A9080';ctx.font='13px sans-serif';ctx.textAlign='center';ctx.fillText('Log entries to see your chart',W/2,H/2);return;}
+  // line
+  if(log.length>1){ctx.strokeStyle='#232320';ctx.lineWidth=2.5;ctx.lineJoin='round';ctx.beginPath();log.forEach(function(e,i){i===0?ctx.moveTo(toX(i),toY(e.lbs)):ctx.lineTo(toX(i),toY(e.lbs));});ctx.stroke();}
+  // dots
+  var step=Math.max(1,Math.ceil(log.length/Math.floor(cW/50)));
+  log.forEach(function(e,i){
+    var x=toX(i),y=toY(e.lbs),inGoal=e.lbs>=117&&e.lbs<=119;
+    ctx.beginPath();ctx.arc(x,y,4.5,0,Math.PI*2);
+    ctx.fillStyle=inGoal?'#7A9E7E':'#232320';ctx.fill();
+    ctx.strokeStyle='white';ctx.lineWidth=1.5;ctx.stroke();
+    if(i%step===0){var dd=new Date(e.date+'T00:00:00');ctx.fillStyle='#9A9080';ctx.font='10px sans-serif';ctx.textAlign='center';ctx.fillText(dd.toLocaleDateString('en-US',{month:'short',day:'numeric'}),x,H-pB+15);}
+  });
+}
+ ── PROGRESS PHOTOS ──
+var currentPhotoWeek = 1;
+function photoKey(week, angle) { return 'photo_w' + week + '_' + angle; }
+function photoNoteKey(week, angle) { return 'photonote_w' + week + '_' + angle; }
+function photoWeekNoteKey(week) { return 'photoweek_w' + week; }
+
+function changePhotoWeek(d) {
+  currentPhotoWeek = Math.max(1, Math.min(12, currentPhotoWeek + d));
+  document.getElementById('photoWeekLabel').textContent = 'Week ' + currentPhotoWeek;
+  loadPhotoWeek();
+  populateCompareSelects();
+}
+
+function handlePhoto(angle, input) {
+  var file = input.files[0]; if (!file) return;
+  var reader = new FileReader();
+  reader.onload = function(e) {
+    var data = e.target.result;
+    ls(photoKey(currentPhotoWeek, angle), data);
+    showPhoto(angle, data);
+    updateCheckinThumbs();
+  };
+  reader.readAsDataURL(file);
+}
+
+function showPhoto(angle, data) {
+  var img = document.getElementById('img-' + angle);
+  var placeholder = document.getElementById('placeholder-' + angle);
+  if (!img || !placeholder) return;
+  if (data) {
+    img.src = data; img.style.display = 'block';
+    placeholder.style.display = 'none';
+  } else {
+    img.src = ''; img.style.display = 'none';
+    placeholder.style.display = 'flex';
+  }
+}
+
+function clearPhoto(angle) {
+  localStorage.removeItem(photoKey(currentPhotoWeek, angle));
+  showPhoto(angle, null);
+  updateCheckinThumbs();
+}
+
+function savePhotoNote(angle, val) {
+  ls(photoNoteKey(currentPhotoWeek, angle), val);
+}
+
+function savePhotoWeekNotes(val) {
+  ls(photoWeekNoteKey(currentPhotoWeek), val);
+}
+
+function loadPhotoWeek() {
+  ['front','side','back'].forEach(function(angle) {
+    var data = ls(photoKey(currentPhotoWeek, angle));
+    showPhoto(angle, data);
+    var noteEl = document.getElementById('note-' + angle);
+    if (noteEl) noteEl.value = ls(photoNoteKey(currentPhotoWeek, angle)) || '';
+  });
+  var wn = document.getElementById('photo-week-notes');
+  if (wn) wn.value = ls(photoWeekNoteKey(currentPhotoWeek)) || '';
+  renderComparison();
+}
+
+function updateCheckinThumbs() {
+  ['front','side','back'].forEach(function(angle) {
+    var el = document.getElementById('ci-thumb-' + angle); if (!el) return;
+    var data = ls(photoKey(currentWeek, angle));
+    if (data) {
+      el.innerHTML = '<img src="' + data + '">';
+      el.classList.add('has-photo');
+    } else {
+      el.innerHTML = '<span>&#x1F4F8;</span>';
+      el.classList.remove('has-photo');
+    }
+  });
+}
+
+function populateCompareSelects() {
+  var selA = document.getElementById('compareWeekA');
+  var selB = document.getElementById('compareWeekB');
+  if (!selA || !selB) return;
+  var curA = selA.value || '1', curB = selB.value || String(Math.max(1, currentPhotoWeek));
+  selA.innerHTML = ''; selB.innerHTML = '';
+  for (var w = 1; w <= 12; w++) {
+    var hasAny = ['front','side','back'].some(function(a){ return !!ls(photoKey(w,a)); });
+    var label = 'Week ' + w + (hasAny ? ' ✓' : '');
+    selA.innerHTML += '<option value="' + w + '">' + label + '</option>';
+    selB.innerHTML += '<option value="' + w + '">' + label + '</option>';
+  }
+  selA.value = curA; selB.value = curB || currentPhotoWeek;
+  renderComparison();
+}
+
+function renderComparison() {
+  var selA = document.getElementById('compareWeekA');
+  var selB = document.getElementById('compareWeekB');
+  if (!selA || !selB) return;
+  var wA = parseInt(selA.value), wB = parseInt(selB.value);
+  document.getElementById('compare-label-a').textContent = 'Week ' + wA;
+  document.getElementById('compare-label-b').textContent = 'Week ' + wB;
+  ['a','b'].forEach(function(side) {
+    var week = side === 'a' ? wA : wB;
+    var container = document.getElementById('compare-photos-' + side);
+    if (!container) return;
+    container.innerHTML = ['Front','Side','Back'].map(function(label) {
+      var data = ls(photoKey(week, label.toLowerCase()));
+      if (data) return '<div class="compare-photo"><img src="' + data + '"></div>';
+      return '<div class="compare-photo"><div class="compare-empty">' + label + '</div></div>';
+    }).join('');
+  });
+}
+
+// override showPage to handle photos tab
+var _origShowPage = showPage;
+showPage = function(p, btn) {
+  _origShowPage(p, btn);
+  if (p === 'photos') { loadPhotoWeek(); populateCompareSelects(); updateCheckinThumbs(); }
+};
+
+// ── INIT ──
+renderTabs();
+renderDay();
+loadCheckin();
+initWtDate();
+</script>
+
+<!-- PROGRESS PHOTOS PAGE -->
+<div class="page" id="page-photos">
+  <div class="container">
+    <div class="photos-week-row">
+      <div class="week-title">Progress Photos</div>
+      <div class="week-nav">
+        <button onclick="changePhotoWeek(-1)">&#8249;</button>
+        <div class="week-num" id="photoWeekLabel">Week 1</div>
+        <button onclick="changePhotoWeek(1)">&#8250;</button>
+      </div>
+    </div>
+
+    <div class="photo-grid">
+      <!-- Front -->
+      <div class="photo-slot">
+        <div class="photo-slot-header">
+          <h4>Front</h4>
+          <button onclick="clearPhoto('front')">Clear</button>
+        </div>
+        <div class="photo-upload-area" id="upload-front">
+          <div class="photo-placeholder" id="placeholder-front">
+            <div class="photo-placeholder-icon">&#x1F4F7;</div>
+            <div class="photo-placeholder-text">Tap to upload</div>
+          </div>
+          <img id="img-front" style="display:none">
+          <input type="file" accept="image/*" onchange="handlePhoto('front',this)">
+        </div>
+        <div class="photo-slot-notes">
+          <textarea id="note-front" placeholder="Notes for front pose..." oninput="savePhotoNote('front',this.value)" rows="2"></textarea>
+        </div>
+      </div>
+      <!-- Side -->
+      <div class="photo-slot">
+        <div class="photo-slot-header">
+          <h4>Side</h4>
+          <button onclick="clearPhoto('side')">Clear</button>
+        </div>
+        <div class="photo-upload-area" id="upload-side">
+          <div class="photo-placeholder" id="placeholder-side">
+            <div class="photo-placeholder-icon">&#x1F4F7;</div>
+            <div class="photo-placeholder-text">Tap to upload</div>
+          </div>
+          <img id="img-side" style="display:none">
+          <input type="file" accept="image/*" onchange="handlePhoto('side',this)">
+        </div>
+        <div class="photo-slot-notes">
+          <textarea id="note-side" placeholder="Notes for side pose..." oninput="savePhotoNote('side',this.value)" rows="2"></textarea>
+        </div>
+      </div>
+      <!-- Back -->
+      <div class="photo-slot">
+        <div class="photo-slot-header">
+          <h4>Back</h4>
+          <button onclick="clearPhoto('back')">Clear</button>
+        </div>
+        <div class="photo-upload-area" id="upload-back">
+          <div class="photo-placeholder" id="placeholder-back">
+            <div class="photo-placeholder-icon">&#x1F4F7;</div>
+            <div class="photo-placeholder-text">Tap to upload</div>
+          </div>
+          <img id="img-back" style="display:none">
+          <input type="file" accept="image/*" onchange="handlePhoto('back',this)">
+        </div>
+        <div class="photo-slot-notes">
+          <textarea id="note-back" placeholder="Notes for back pose..." oninput="savePhotoNote('back',this.value)" rows="2"></textarea>
+        </div>
+      </div>
+    </div>
+
+    <!-- Week notes -->
+    <div class="wt-card">
+      <div class="card-header"><h3>Week Notes</h3></div>
+      <div class="card-body">
+        <textarea id="photo-week-notes" placeholder="How are you feeling this week? Any visible changes? Measurements?" oninput="savePhotoWeekNotes(this.value)" style="width:100%;padding:8px 10px;border:1px solid var(--border);border-radius:5px;font-size:13px;font-family:'DM Sans',sans-serif;background:var(--chalk);resize:vertical;min-height:70px;"></textarea>
+      </div>
+    </div>
+
+    <!-- Comparison -->
+    <div class="compare-card">
+      <div class="card-header">
+        <h3>Side-by-Side Comparison</h3>
+      </div>
+      <div class="compare-controls">
+        <label>Compare</label>
+        <select id="compareWeekA" onchange="renderComparison()"></select>
+        <label>vs</label>
+        <select id="compareWeekB" onchange="renderComparison()"></select>
+      </div>
+      <div class="compare-grid">
+        <div class="compare-side">
+          <div class="compare-side-label" id="compare-label-a">Week —</div>
+          <div class="compare-photos" id="compare-photos-a">
+            <div class="compare-photo"><div class="compare-empty">Front</div></div>
+            <div class="compare-photo"><div class="compare-empty">Side</div></div>
+            <div class="compare-photo"><div class="compare-empty">Back</div></div>
+          </div>
+        </div>
+        <div class="compare-side">
+          <div class="compare-side-label" id="compare-label-b">Week —</div>
+          <div class="compare-photos" id="compare-photos-b">
+            <div class="compare-photo"><div class="compare-empty">Front</div></div>
+            <div class="compare-photo"><div class="compare-empty">Side</div></div>
+            <div class="compare-photo"><div class="compare-empty">Back</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
